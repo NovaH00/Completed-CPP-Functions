@@ -1,7 +1,7 @@
 #include <iostream>
-
+#include <vector>
 int main()
 {
-    std::cout << "test";
+    std::vector<int> a[10];
     return 0;
 }
