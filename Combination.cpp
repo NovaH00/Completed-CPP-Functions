@@ -14,7 +14,7 @@ std::vector<std::vector<int>> combinations(std::vector<int> nums)
     int lastNum = nums[nums.size() - 1];
     std::vector<int> att;   //"att" vector is used to change "lastNum" type
     att.push_back(lastNum); // from int to vector<int>, which is correct type for
-    res.push_back(att);     // an member of "res" vector
+    res.push_back(att);     // a member of "res" vector
     nums.erase(nums.begin() + nums.size() - 1);
     for (auto com : combinations(nums))
     {
